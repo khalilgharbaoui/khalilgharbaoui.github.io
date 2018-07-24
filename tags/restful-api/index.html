@@ -1,0 +1,304 @@
+<!doctype html> <html> <head> <meta charset=utf-8 /> <meta http-equiv=X-UA-Compatible content='IE=edge;chrome=1'/> <meta name=viewport content="width=device-width, initial-scale=1"> <meta name=google-site-verification content=XsLoNHGByzH5FTYq6wYNWXDHE4OIjic0VHrKAJtC4PY /> <link rel=alternate href="http://khalilgharbaoui.codez.it" hreflang=en-nl /> <link rel=alternate href="http://khalilgharbaoui.codez.it" hreflang=en-ch /> <title>Khalil Gharbaoui</title> <link rel=alternate type="application/atom+xml" title="Atom Feed" href="/feed.xml"/> <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel=stylesheet> <link rel=stylesheet href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel=stylesheet integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin=anonymous> <link href="../../stylesheets/site.css" rel=stylesheet /><link href="../../stylesheets/syntax.css" rel=stylesheet /> <script src="../../javascripts/includes.js"></script> <script src="../../javascripts/all.js"></script> <script src="//cdn.jsdelivr.net/jquery.infinitescroll/2.1.0/jquery.infinitescroll.min.js"></script> <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-76416856-1', 'auto');
+      ga('send', 'pageview');
+
+    </script> </head> <body> <header> <span class="logo big-menu"><a href="/">KG</a></span> <span id=about-me-button class="toggle-stamp-button big-menu">about me</span> <span id=my-work-button class=big-menu><a href="/my-work/">my work</a></span> <span id=resume-button class=big-menu><a href="/resume/">resume</a></span> <span id=blog-button class=big-menu><a href="/blog/">blog</a></span> <span id=contact-button class=big-menu><a href="/contact/">contact</a></span> <span id=back-button class=big-menu><a href="javascript:history.back()">Back</a></span> <nav id=nav-mobile> <span class=logo><a href="/">KG</a></span> <span id=about-me-button class=toggle-stamp-button>about me</span> <span id=my-work-button><a href="/my-work/">my work</a></span> <span id=resume-button><a href="/resume/">resume</a></span> <span id=blog-button><a href="/blog/">blog</a></span> <span id=contact-button><a href="/contact/">contact</a></span> <span id=back-button><a href="javascript:history.back()">Back</a></span> </nav> </header> <div class=box id=main role=main> <style>
+body {
+  margin: 0;
+  padding: 0;
+  background: #60d7a9!important;
+  transition: 2000ms ease-in;
+
+  color: rgb(50,50,50);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 112.5%;
+  line-height: 1.6em;
+}
+
+/* ================ The Timeline ================ */
+.timeline {
+  position: relative;
+  width: 660px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 1em 0;
+  list-style-type: none;
+  margin-bottom: 30px !important;
+}
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: ' ';
+  display: block;
+  width: 6px;
+  height: 100%;
+  margin-left: -3px;
+  background: rgb(80,80,80);
+  background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,1)));
+  background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+  background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+
+  z-index: 5;
+}
+.timeline li {
+  padding: 1em 0;
+}
+
+.timeline li:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.direction-left {
+  position: relative;
+  width: 300px;
+  float: left;
+  text-align: right;
+}
+
+.direction-right {
+  position: relative;
+  width: 300px;
+  float: right;
+}
+
+.flag-wrapper {
+  position: relative;
+  display: inline-block;
+
+  text-align: center;
+}
+
+.flag {
+  position: relative;
+  display: inline;
+  background: rgb(248,248,248);
+  padding: 6px 10px;
+  border-radius: 5px;
+
+  font-weight: 600;
+  text-align: left;
+}
+
+.direction-left .flag {
+  -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-right .flag {
+  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-left .flag:before,
+.direction-right .flag:before {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  content: ' ';
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin-top: -10px;
+  background: #fff;
+  border-radius: 10px;
+  border: 4px solid rgb(255,80,80);
+  z-index: 10;
+}
+
+.direction-right .flag:before {
+  left: -40px;
+}
+
+.direction-left .flag:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-left-color: rgb(248,248,248);
+  border-width: 8px;
+}
+
+.direction-right .flag:after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  margin-top: -8px;
+  border: solid transparent;
+  border-right-color: rgb(248,248,248);
+  border-width: 8px;
+}
+
+.time-wrapper {
+  display: inline;
+
+  line-height: 1em;
+  font-size: 0.66666em;
+  color: rgb(250,80,80);
+  vertical-align: middle;
+}
+
+.direction-left .time-wrapper {
+  float: left;
+}
+
+.direction-right .time-wrapper {
+  float: right;
+}
+
+.time {
+  display: inline-block;
+  padding: 4px 6px;
+  background: rgb(248,248,248);
+}
+
+.desc {
+  margin: 1em 0.75em 0 0;
+
+  font-size: 0.77777em;
+  font-style: italic;
+  line-height: 1.5em;
+}
+
+.direction-right .desc {
+  margin: 1em 0 0 0.75em;
+}
+
+/* ================ Timeline Media Queries ================ */
+
+@media screen and (max-width: 660px) {
+
+.timeline {
+ 	width: 100%;
+	padding: 4em 0 1em 0;
+}
+
+.timeline li {
+	padding: 2em 0;
+}
+
+.direction-left,
+.direction-right {
+	float: none;
+	width: 100%;
+
+	text-align: center;
+}
+
+.flag-wrapper {
+	text-align: center;
+}
+
+.flag {
+	background: rgb(255,255,255);
+	z-index: 15;
+}
+
+.direction-left .flag:before,
+.direction-right .flag:before {
+  position: absolute;
+  top: -30px;
+	left: 50%;
+	content: ' ';
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin-left: -9px;
+	background: #fff;
+	border-radius: 10px;
+	border: 4px solid rgb(255,80,80);
+	z-index: 10;
+}
+
+.direction-left .flag:after,
+.direction-right .flag:after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: -8px;
+	height: 0;
+	width: 0;
+	margin-left: -8px;
+	border: solid transparent;
+	border-bottom-color: rgb(255,255,255);
+	border-width: 8px;
+}
+
+.time-wrapper {
+	display: block;
+	position: relative;
+	margin: 4px 0 0 0;
+	z-index: 14;
+}
+
+.direction-left .time-wrapper {
+	float: none;
+}
+
+.direction-right .time-wrapper {
+	float: none;
+}
+
+.desc {
+	position: relative;
+	margin: 1em 0 0 0;
+	padding: 1em;
+	background: rgb(245,245,245);
+	-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+	-moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+	box-shadow: 0 0 1px rgba(0,0,0,0.20);
+
+  z-index: 15;
+}
+
+.direction-left .desc,
+.direction-right .desc {
+	position: relative;
+	margin: 1em 1em 0 1em;
+	padding: 1em;
+
+  z-index: 15;
+}
+
+}
+
+@media screen and (min-width: 400px ?? max-width: 660px) {
+
+.direction-left .desc,
+.direction-right .desc {
+	margin: 1em 4em 0 4em;
+}
+
+}
+.box {
+   background: none !important;
+   padding: 0px !important;
+   box-shadow: 0 0px 0px !important;
+   z-index: 0 !important;
+     position:inherit;
+     margin-bottom: auto !important;
+     pointer-events: none;
+}
+
+</style> <br/> <br/> <center><h1>Articles tagged 'RESTful API'</h1></center> <ul class=timeline> <li> <div class=direction-left> <div class=flag-wrapper> <span class=flag><a href="../../ReactJS-Roller-Coaster/">ReactJS Roller Coaster!</a></span> <span class=time-wrapper><span class=time>27 April 2016</span></span> </div> <div class=desc><h1>ReactJS Roller Coaster!</h1> <p><img title="ReactJS FluxJS NodeJS GulpJS JavaScript ES6" alt="ReactJS FluxJS NodeJS GulpJS JavaScript ES6" src="../../images/ReactJS-FluxJS-NodeJS-GulpJS-ES6.png"></p> <p>ReactJS was like riding a roller coaster🌀 At first. But i managed...</p></div> </div> </li> </ul> <br/> </div> <footer class=footer-box> <div class=social-footer> <ul> <li> <a href="https://ch.linkedin.com/in/khalilgharbaoui" target=_blank> <i class="fa fa-linkedin"></i> </a> </li> <li> <a href="https://github.com/khalilgharbaoui" target=_blank> <i class="fa fa-github"></i> </a> </li> <li> <a href="https://www.google.com/partners/?hl=en-GB#a_profile;idtf=7256334643;" target=_blank> <i class="fa fa-google"></i> </a> </li> <li> <a href="mailto:khalilgharbaoui@hotmail.com" target=_blank> <i class="fa fa-envelope-o"></i> </a> </li> </ul> </div> </footer> </body> </html>

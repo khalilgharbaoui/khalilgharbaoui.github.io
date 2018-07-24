@@ -1,0 +1,234 @@
+<!doctype html> <html> <head> <meta charset=utf-8 /> <meta http-equiv=X-UA-Compatible content='IE=edge;chrome=1'/> <meta name=viewport content="width=device-width, initial-scale=1"> <meta name=google-site-verification content=XsLoNHGByzH5FTYq6wYNWXDHE4OIjic0VHrKAJtC4PY /> <link rel=alternate href="http://khalilgharbaoui.codez.it" hreflang=en-nl /> <link rel=alternate href="http://khalilgharbaoui.codez.it" hreflang=en-ch /> <title>Khalil Gharbaoui | In To The Code!</title> <link rel=alternate type="application/atom+xml" title="Atom Feed" href="/feed.xml"/> <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel=stylesheet> <link rel=stylesheet href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel=stylesheet integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin=anonymous> <link href="../stylesheets/site.css" rel=stylesheet /><link href="../stylesheets/syntax.css" rel=stylesheet /> <script src="../javascripts/includes.js"></script> <script src="../javascripts/all.js"></script> <script src="//cdn.jsdelivr.net/jquery.infinitescroll/2.1.0/jquery.infinitescroll.min.js"></script> <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-76416856-1', 'auto');
+      ga('send', 'pageview');
+
+    </script> </head> <body> <header> <span class="logo big-menu"><a href="/">KG</a></span> <span id=about-me-button class="toggle-stamp-button big-menu">about me</span> <span id=my-work-button class=big-menu><a href="/my-work/">my work</a></span> <span id=resume-button class=big-menu><a href="/resume/">resume</a></span> <span id=blog-button class=big-menu><a href="/blog/">blog</a></span> <span id=contact-button class=big-menu><a href="/contact/">contact</a></span> <span id=back-button class=big-menu><a href="javascript:history.back()">Back</a></span> <nav id=nav-mobile> <span class=logo><a href="/">KG</a></span> <span id=about-me-button class=toggle-stamp-button>about me</span> <span id=my-work-button><a href="/my-work/">my work</a></span> <span id=resume-button><a href="/resume/">resume</a></span> <span id=blog-button><a href="/blog/">blog</a></span> <span id=contact-button><a href="/contact/">contact</a></span> <span id=back-button><a href="javascript:history.back()">Back</a></span> </nav> </header> <style>img{width: 100% !important; margin: 0;} h1{font-size:40px;}</style> <div class=box id=main role=main style="background-color:#Fff !important;"> <div style="padding:20px;"> <h1>In To The Code!</h1> <p><img src="../images/codeacademy-ruby.png"/></p> <p>There i was, learning PHP, I figured if half the web uses &ldquo;WordPress&rdquo; the PHP based platform, it might be the language that needs the most attention.</p> <p>Looking back i&rsquo;m so happy i was wrong about that one!!</p> <p>In the first days of January 2016 a friend of mine told me about a development bootcamp in Amsterdam called Codaisseur, where they teach people to code, &ldquo;It will only take about 5 to 7 weeks time and you will be able to code&rdquo; he said. On top of that they would help me with getting a job as a Junior Developer, guide me during the job for 2 years until i reach a senior level.</p> <p>It sounded really good, but i waited about 2 weeks, then i had to check it out, i send out an e-mail stating that i wanted to participate in the traineeship program.</p> <p>Mr. W. de Vos of Codaisseur, told me there was only one spot still open and that if i wanted to participate i should at least be able to do the entire Ruby course on the Code Academy website in 48 hours to get a feeling of the intensity of the bootcamp, the first traineeship would already start in 2 days, i only had about 24 hours left to do it😳, non the less i didn&rsquo;t give up, it was now or never!</p> <p>I huffed and puffed and stayed up all night, pulled it off and sent him the result in the morning.<br/> Next Stop Codaisseur Amsterdam! 😁</p> <p><br/> <br/> <p>Even tough the concepts are quite similar, PHP is a such a pain in the $@## 😏, compared to the friendly-ness and readability of Ruby. </p> <p>Checkout some of these loop exercises i did on my own in PHP:</p></p> <p><a href="http://webtotally.com/test.php">demo</a></p> <p>source:</p> <div class="highlight php"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class=lineno>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103</pre></td><td class=code><pre><span class="cp">&lt;!doctype html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;title&gt;</span>WebDesign Huiswerk Opdracht 38<span class="nt">&lt;/title&gt;</span>
+<span class="cp">&lt;?php</span>
+<span class="cm">/*Style voor de tabellen*/</span>
+<span class="k">echo</span> <span class="s2">"&lt;style&gt;
+.rij</span><span class="si">{</span><span class="nv">clear:both;</span><span class="si">}</span><span class="s2">.blokje {
+display: inline-block;
+width: 10px;
+padding: 17px 22px;
+border: solid 2px black;}
+.rij2</span><span class="si">{</span><span class="nv">clear:both;</span><span class="si">}</span><span class="s2">
+.blokje2 {
+    display: inline-block;
+    width: 200px;
+    padding: 10px 10px;
+    border: solid 1px black;
+}
+&lt;/style&gt;"</span>
+<span class="cp">?&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;h1&gt;</span> FOR loop tabel met vermenigvuldiging van 1 tot 10 <span class="nt">&lt;/h1&gt;</span>
+<span class="cp">&lt;?php</span>
+
+<span class="cm">/*for loop tabel met vermenigvuldiging van 1 tot 10*/</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="nv">$cijferX</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nv">$cijferX</span> <span class="o">&lt;=</span><span class="mi">10</span><span class="p">;</span> <span class="nv">$cijferX</span><span class="o">++</span><span class="p">){</span>
+    <span class="k">echo</span> <span class="s2">"&lt;div class='rij'&gt;"</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="nv">$cijferY</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="nv">$cijferY</span> <span class="o">&lt;=</span><span class="mi">10</span><span class="p">;</span> <span class="nv">$cijferY</span> <span class="o">++</span><span class="p">){</span>
+    <span class="k">echo</span> <span class="s2">"&lt;div class='blokje'&gt;"</span><span class="o">.</span> <span class="nv">$cijferX</span><span class="o">*</span><span class="nv">$cijferY</span> <span class="o">.</span><span class="s2">"&lt;/div&gt;"</span><span class="p">;}</span>
+<span class="p">}</span>
+<span class="k">echo</span> <span class="s2">"&lt;/div&gt;"</span><span class="p">;</span>
+<span class="cp">?&gt;</span>
+
+
+<span class="nt">&lt;br/&gt;</span>
+<span class="nt">&lt;br/&gt;</span>
+<span class="nt">&lt;h1&gt;</span> While loop dat informatie genereert vanuit een 2D array in een tabel <span class="nt">&lt;/h1&gt;</span>
+<span class="cp">&lt;?php</span>
+
+<span class="cm">/*While loop dat informatie genereert vanuit een 2D array in een tabel*/</span>
+
+<span class="nv">$brd</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+<span class="k">array</span><span class="p">(</span><span class="s2">"Saksen"</span><span class="p">,</span> <span class="s2">"Dresden"</span><span class="p">,</span> <span class="s2">"Zwinger-monument"</span><span class="p">),</span>
+<span class="k">array</span><span class="p">(</span><span class="s2">"Hessen"</span><span class="p">,</span> <span class="s2">"Wiesbadden"</span><span class="p">,</span> <span class="s2">"Kurhaus"</span><span class="p">),</span>
+<span class="k">array</span><span class="p">(</span><span class="s2">"Beieren"</span><span class="p">,</span> <span class="s2">"München"</span><span class="p">,</span> <span class="s2">"Paleis van Justitie"</span><span class="p">)</span>
+
+<span class="p">);</span>
+
+
+<span class="nv">$x</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="nv">$x</span> <span class="o">&lt;=</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$brd</span><span class="p">)</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">echo</span> <span class="s2">"&lt;div class='rij2'&gt;"</span><span class="p">;</span>
+    <span class="nv">$y</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+
+        <span class="k">while</span> <span class="p">(</span><span class="nv">$y</span> <span class="o">&lt;=</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$brd</span><span class="p">)</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">echo</span> <span class="s2">"&lt;div class='blokje2'&gt;"</span> <span class="o">.</span> <span class="nv">$brd</span><span class="p">[</span><span class="nv">$x</span><span class="p">][</span><span class="nv">$y</span><span class="p">]</span> <span class="o">.</span> <span class="s2">"&lt;/div&gt;"</span><span class="p">;</span>
+            <span class="nv">$y</span><span class="o">++</span><span class="p">;</span>
+
+            <span class="p">}</span>
+
+    <span class="nv">$x</span><span class="o">++</span><span class="p">;</span>
+
+
+    <span class="k">echo</span> <span class="s2">"&lt;/div&gt;"</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="cp">?&gt;</span>
+
+<span class="nt">&lt;br/&gt;</span>
+<span class="nt">&lt;br/&gt;</span>
+<span class="nt">&lt;h1&gt;</span>FOR loop dat informatie genereert vanuit een 2D array in een tabel<span class="nt">&lt;/h1&gt;</span>
+<span class="cp">&lt;?php</span>
+
+<span class="cm">/*FOR loop dat informatie genereert vanuit een 2D array in een tabel*/</span>
+
+<span class="nv">$brd2</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+<span class="k">array</span><span class="p">(</span><span class="s2">"Saksen"</span><span class="p">,</span> <span class="s2">"Dresden"</span><span class="p">,</span> <span class="s2">"Zwinger-monument"</span><span class="p">),</span>
+<span class="k">array</span><span class="p">(</span><span class="s2">"Hessen"</span><span class="p">,</span> <span class="s2">"Wiesbadden"</span><span class="p">,</span> <span class="s2">"Kurhaus"</span><span class="p">),</span>
+<span class="k">array</span><span class="p">(</span><span class="s2">"Beieren"</span><span class="p">,</span> <span class="s2">"München"</span><span class="p">,</span> <span class="s2">"Paleis van Justitie"</span><span class="p">)</span>
+<span class="p">);</span>
+<span class="k">echo</span> <span class="s2">"&lt;div class='rij2'&gt;"</span><span class="p">;</span>
+
+<span class="k">for</span> <span class="p">(</span>
+<span class="nv">$x</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nv">$x</span> <span class="o">&lt;=</span> <span class="nb">sizeof</span><span class="p">(</span><span class="nv">$brd2</span><span class="p">)</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="nv">$x</span><span class="o">++</span><span class="p">)</span>
+<span class="p">{</span>
+
+    <span class="k">for</span> <span class="p">(</span>
+    <span class="nv">$y</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nv">$y</span><span class="o">&lt;=</span><span class="nb">sizeof</span><span class="p">(</span><span class="nv">$brd2</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="nv">$y</span><span class="o">++</span>
+    <span class="p">){</span>
+        <span class="k">echo</span> <span class="s2">"&lt;div class='blokje2'&gt;"</span> <span class="o">.</span> <span class="nv">$brd2</span><span class="p">[</span><span class="nv">$x</span><span class="p">][</span><span class="nv">$y</span><span class="p">]</span> <span class="o">.</span> <span class="s2">"&lt;/div&gt;"</span><span class="p">;}</span>
+        <span class="k">echo</span> <span class="s2">"&lt;/div&gt;"</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cp">?&gt;</span>
+<span class="nt">&lt;br/&gt;</span>
+<span class="nt">&lt;br/&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></td></tr></tbody></table> </div> <div id=disqus_thread></div> <script>
+        /**
+        * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+        */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = '//khalilgharbaoui.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script> <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel=nofollow>comments powered by Disqus.</a></noscript> </div> </div> <div align=center style="width:100%;"> <div style="width: 280px; box-shadow: 0px 6px 10px rgba(8, 8, 8, 0.8); padding: 24px; background-color: #FDFDFD !important; float:right; clear:right;margin:20px auto 100px auto"> <div class=grid-item-footer-content> <h2>Tags</h2> <ul id=cloud> <li><a class=tag3 href="/tags/ruby/">Ruby (3)</a></li> <li><a class=tag1 href="/tags/html/">HTML (1)</a></li> <li><a class=tag1 href="/tags/css/">CSS (1)</a></li> <li><a class=tag1 href="/tags/git/">Git (1)</a></li> <li><a class=tag1 href="/tags/github/">Github (1)</a></li> <li><a class=tag1 href="/tags/terminal/">Terminal (1)</a></li> <li><a class=tag1 href="/tags/irb/">IRB (1)</a></li> <li><a class=tag1 href="/tags/reactjs/">ReactJS (1)</a></li> <li><a class=tag1 href="/tags/nodejs/">NodeJS (1)</a></li> <li><a class=tag1 href="/tags/flux/">Flux (1)</a></li> <li><a class=tag1 href="/tags/gulp/">Gulp (1)</a></li> <li><a class=tag1 href="/tags/jquery/">jQuery (1)</a></li> <li><a class=tag1 href="/tags/javascript/">JavaScript (1)</a></li> <li><a class=tag1 href="/tags/ajax/">AJAX (1)</a></li> <li><a class=tag1 href="/tags/json/">JSON (1)</a></li> <li><a class=tag1 href="/tags/restful-api/">RESTful API (1)</a></li> <li><a class=tag1 href="/tags/api/">API (1)</a></li> <li><a class=tag1 href="/tags/php/">PHP (1)</a></li> <li><a class=tag1 href="/tags/ruby-on-rails/">Ruby on Rails (1)</a></li> <li><a class=tag1 href="/tags/domain-moddeling/">Domain Moddeling (1)</a></li> <li><a class=tag1 href="/tags/diagrams/">Diagrams (1)</a></li> <li><a class=tag1 href="/tags/gems/">Gems (1)</a></li> <li><a class=tag1 href="/tags/graphviz/">Graphviz (1)</a></li> <li><a class=tag1 href="/tags/railroady/">railroady (1)</a></li> <li><a class=tag1 href="/tags/rails-erd/">rails-erd (1)</a></li> </ul> </div> </div> <div style="width: 280px; box-shadow: 0px 6px 10px rgba(8, 8, 8, 0.8); padding: 24px; background-color: #FDFDFD !important; float:left; clear:left;margin:20px auto 100px auto"> <div class=grid-item-footer-content> <h2>By Year</h2> <ul id=cloud> <li><a href="/2016/">2016 (4)</a></li> </ul> </div> </div> </div> <br/> <footer class=footer-box> <div class=social-footer> <ul> <li> <a href="https://ch.linkedin.com/in/khalilgharbaoui" target=_blank> <i class="fa fa-linkedin"></i> </a> </li> <li> <a href="https://github.com/khalilgharbaoui" target=_blank> <i class="fa fa-github"></i> </a> </li> <li> <a href="https://www.google.com/partners/?hl=en-GB#a_profile;idtf=7256334643;" target=_blank> <i class="fa fa-google"></i> </a> </li> <li> <a href="mailto:khalilgharbaoui@hotmail.com" target=_blank> <i class="fa fa-envelope-o"></i> </a> </li> </ul> ©2016 Khalil Gharbaoui </div> </footer> </body> </html>
